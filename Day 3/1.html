@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Ascending Order </title>
+</head>
+<body>
+
+</body>
+</html>
+<script type="text/javascript">
+	
+	let array = [ 8 , 7 , 9 , 4 , 3 , 2 , 6 , 5 , 1 , 10 ]
+
+	function SelectionSort(array)
+	{
+		for(let i = 0 ; i < array.length ; i++)
+		{
+			let last = array.length - i - 1
+			let max = getmax(array , 0 , last)
+			swap(array , max , last)
+		}
+	}
+
+	function getmax(array , s , e)
+	{
+		let max = 0
+
+		for(let i = s ; i <= e ; i++)
+		{
+			if(array[i] > array[max])
+			{
+				max = i
+			}
+		}
+		return max
+	}
+
+	function swap(array , f , s)
+	{
+		let t = array[f]
+		array[f] = array[s]
+		array[s] = t
+	}
+
+	SelectionSort(array)
+	console.log(array)
+
+</script>
