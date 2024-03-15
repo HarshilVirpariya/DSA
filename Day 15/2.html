@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> 2 </title>
+</head>
+<body>
+
+</body>
+</html>
+<script type="text/javascript">
+	
+	let string = "Harshil"
+
+	function Reverse(string)
+	{
+		let stack = []
+		let Answer = ""
+		for(let i = 0 ; i < string.length ; i++)
+		{
+			stack.push(string[i])
+		}
+		for(let i = 0 ; i < string.length ; i++)
+		{
+			Answer += stack.pop()
+		}
+		return Answer
+	}
+
+	console.log(Reverse(string))
+
+</script>
