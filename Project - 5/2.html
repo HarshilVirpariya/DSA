@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 2 </title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+let array = [ 1 , 2 , 3 , 4 , 3 ]
+
+function Next_GreaterValue(arr)
+{
+    let stack=[]
+
+    let MaxValue = (Math.max(...array));
+ 
+    for(let i = 0 ; i < array.length ; i++)
+    {       
+        stack.push(array[i] == MaxValue ? -1 : array[i] + 1)
+    }         
+    return stack    
+}
+
+console.log(Next_GreaterValue(array))
+
+</script>
