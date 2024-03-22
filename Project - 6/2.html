@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> 2 </title>
+</head>
+<body>
+
+</body>
+</html>
+<script type="text/javascript">
+	
+	let expression = "()[]{}";
+
+	function Balance(str)
+	{
+		stack = []
+		for(let i = 0 ; i < str.length ; i++)
+		{
+			let char = str[i]
+	
+			if(char === "(" || char === "[" || char === "{")
+			{
+				stack.push(char)
+			}
+			else
+			{
+				if(stack.length === 0)
+				{
+					return false
+				}
+				let top = stack.pop()
+				if(char === ")" && top != "(" || char === "]" && top != "[" || char === "}" && top != "{")
+				{
+					return false
+				}
+			}
+		}
+		return stack.length === 0
+	}
+	console.log(Balance(expression))
+
+</script>

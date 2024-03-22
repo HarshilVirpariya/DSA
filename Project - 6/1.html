@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> 1 </title>
+</head>
+<body>
+
+</body>
+</html>
+<script type="text/javascript">
+	
+	let string1 = "ayan";
+	let string2 = "yyan";
+
+	if(string1 == "" || string2 == "")
+	{
+		console.log("Please Enter Both String...!")
+	}
+	else
+	{
+		function isAnagram( string1 , string2 )
+		{
+			if(string1.length != string2.length)
+			{
+				return false
+			}
+	
+			let S = string1.split('').sort().join('')
+			let T = string2.split('').sort().join('')
+	
+			return S == T
+		} 
+	
+		console.log(isAnagram( string1 , string2 ))
+	}
+
+</script>
