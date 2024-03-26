@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Revision - 3 </title>
+</head>
+<body>
+    
+</body>
+</html>
+<script type="text/javascript">
+    
+    let arr1=[2,7,18,76,55]
+    
+    let arr2= [4,2,3,8,1]
+    
+    let m=3
+    
+    let n=3
+    
+    function merge(arr1, arr2, m, n)
+    {
+        let new_array = []
+    
+        for (let i = 0; i < m; i++)
+        {
+            new_array.push(arr1[i])
+        }
+    
+        for (let i = 0; i < n; i++)
+        {
+            new_array.push(arr2[i])
+        }
+    
+        new_array = new_array.sort((a, b) => a - b)
+    
+        return new_array
+    }
+    
+    console.log(merge(arr1, arr2, m, n))
+
+</script>
