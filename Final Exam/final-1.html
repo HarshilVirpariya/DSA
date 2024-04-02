@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Final - 1 </title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- Input: nums = [2,7,11,15], target = 9 Output: [0,1] -->
+
+<script>
+
+    let nums1 = [2,7,11,15]
+    let target1 = 9
+
+    function input1(nums1,target1)
+    {
+        let check1 = 0
+        let change1 = []
+
+        for (let i = 0 ; i < nums1.length ; i++)
+        {
+            if(check1 == target1)
+            {
+                break
+            }
+            else
+            {
+                check1 += nums1[i]
+                change1.push(i)
+            }
+        }
+
+        return change1;
+    }
+
+    console.log(input1(nums1 , target1));
+
+</script>
+
+<!-- Input: nums = [3,2,4], target = 6 Output: [1,2] -->
+
+<script>
+
+    let nums2 = [3,2,4]
+    let target2 = 6
+
+    function input2(nums2,target2)
+    {
+        let check2 = 0
+        let change2 = []
+
+        for (let j = 1 ; j < nums2.length ; j++) 
+        {
+            if(check2 == target2)
+            {
+                break
+            }
+            else
+            {
+                check2 += nums2[j]
+                change2.push(j)
+            }
+        }
+
+        return change2;
+    }
+
+    console.log(input2(nums2 , target2));
+    
+</script>
+
+<!-- Input: nums = [3,3], target = 6 Output: [0,1] -->
+
+<script>
+
+    let nums3 = [3,3]
+    let target3 = 6
+
+    function input3(nums3,target3)
+    {
+        let check3 = 0
+        let change3 = []
+
+        for (let k = 0 ; k < nums3.length ; k++)
+        {
+            if(check3 == target3)
+            {
+                break
+            }
+            else
+            {
+                check3 += nums3[k]
+                change3.push(k)
+            }
+        }
+
+        return change3;
+    }
+
+    console.log(input3(nums3 , target3));
+    
+</script>

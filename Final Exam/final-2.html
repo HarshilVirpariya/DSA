@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Final - 2 </title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+    function HappyNumber(n)
+    {
+        function GetNextNumber(Number)
+        {
+            let Total = 0;
+    
+            while (Number > 0)
+            {
+                const Digit = Number % 10;
+                Total += Digit ** 2;
+                Number = Math.floor(Number / 10);
+            }
+    
+            return Total;
+        }
+    
+        const NewNumber = new Set();
+    
+        while (n !== 1 && !NewNumber.has(n))
+        {
+            NewNumber.add(n);
+            n = GetNextNumber(n);
+        }
+    
+        return n === 1;
+    
+    }
+
+    console.log(HappyNumber(19));
+
+</script>
