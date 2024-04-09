@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Week - 11 </title>
+
+	<!--CSS Link-->
+	<link rel="stylesheet" type="text/css" href="week11style.css">
+	<!--CSS Link-->
+
+	<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+	<!--Bootstrap-->
+
+	<!--Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chakra+Petch:wght@300&family=Kanit:wght@100&	family=Lumanosimo&family=Tektur&family=Ysabeau+SC:wght@200&display=swap" rel="stylesheet">
+	<!--Google Fonts-->
+
+	<!--Jquery CDN-->
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+	<!--Jquery CDN-->
+
+	<!--Font awesome CDN-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--Font awesome CDN-->
+
+	<!--remix icon-->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+	<!--remix icon-->
+
+	<!--Swipper Slider-->
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  	<!--Swipper Slider-->
+
+  	<!--WayPoint Js CDN-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!--WayPoint Js CDN-->
+
+	<!--Animated CSS-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!--Animated CSS-->
+
+</head>
+<body>
+<header>
+	<div class="subheader">
+		<div class="logo">
+			<p class="display-5 wow animate__animated animate__bounceInUp" id="hotell"><a href="#">Hotell</a></p>
+		</div>
+		<i class="fa fa-bars" id="bars"></i>
+		<nav class="wow animate__animated animate__bounceInDown">
+			<a href="" id="a1">Home</a>
+			<a href="#" type="button" class="dropdown-toggle" data-bs-toggle="dropdown" id="drop">Destinition
+				<ul class="dropdown-menu">
+					<li class="dropdown-item" id="menu">Out Of Country</li>
+					<li class="dropdown-item" id="menu">Out Of State</li>
+				</ul>
+			</a>
+			<a href="#" id="a2">Service</a>
+			<a href="#" id="a3">About</a>
+			<a href="#" id="a4">Contact</a>
+		</nav>
+	</div>
+	<div class="text">
+		<p class="display-5 wow animate__animated animate__zoomIn" id="text">
+			Once a year go someplace <br>
+			you've never been before.
+		</p>
+		<button id="button" class="btn btn-success wow animate__animated animate__zoomIn">See Video</button>
+	</div>
+</header>
+<div class="ticket">
+	<div class="tic">
+		<input type="text" name="Date" placeholder="Date Arrival" id="input" class="wow animate__animated animate__bounceInLeft">
+		<i class="ri-calendar-2-line wow animate__animated animate__bounceInLeft" id="i1"></i>
+		<input type="text" name="Date" placeholder="Date Departure" id="input" class="wow animate__animated animate__bounceInUp">
+		<i class="ri-calendar-2-line wow animate__animated animate__bounceInUp" id="i2"></i>
+		<input type="text" name="Date" placeholder="# Of Person" id="input" class="wow animate__animated animate__bounceInRight">
+		<i class="ri-user-line wow animate__animated animate__bounceInRight" id="i3"></i>
+		<button id="btnfind" class="wow animate__animated animate__zoomIn">Find Now</button>
+	</div>
+</div>
+<div class="service">
+	<div class="ser1">
+		<p class="display-5">Our Services</p>
+	</div>
+	<div class="ser2">
+		<div class="ser3 wow animate__animated animate__bounceInRight">
+			<i class="ri-run-line"></i>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h6>Trekking</h6>
+			<p>
+				Far far away, behind the word mountains, far from the <br>
+				countries Vokalia and Consonantia, there live the blind texts.
+			</p>
+			<a href="#">LEARN MORE</a>
+		</div>
+		<div class="ser3 wow animate__animated animate__bounceInUp">
+			<i class="ri-map-pin-fill"></i>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h6>The Map</h6>
+			<p>
+				Far far away, behind the word mountains, far from the <br>
+				countries Vokalia and Consonantia, there live the blind texts.
+			</p>
+			<a href="#">LEARN MORE</a>
+		</div>
+		<div class="ser3 wow animate__animated animate__bounceInLeft">
+			<i class="ri-briefcase-2-fill"></i>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h6>Suitcase</h6>
+			<p>
+				Far far away, behind the word mountains, far from the <br>
+				countries Vokalia and Consonantia, there live the blind texts.
+			</p>
+			<a href="#">LEARN MORE</a>
+		</div>
+		<div class="ser3 wow animate__animated animate__bounceInRight">
+			<i class="ri-sun-cloudy-fill"></i>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h6>Island Hoping</h6>
+			<p>
+				Far far away, behind the word mountains, far from the <br>
+				countries Vokalia and Consonantia, there live the blind texts.
+			</p>
+			<a href="#">LEARN MORE</a>
+		</div>
+		<div class="ser3 wow animate__animated animate__bounceInUp">
+			<i class="ri-earth-fill"></i>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h6>World Round</h6>
+			<p>
+				Far far away, behind the word mountains, far from the <br>
+				countries Vokalia and Consonantia, there live the blind texts.
+			</p>
+			<a href="#">LEARN MORE</a>
+		</div>
+		<div class="ser3 wow animate__animated animate__bounceInLeft">
+			<i class="ri-plane-fill"></i>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h6>Travel with Plane</h6>
+			<p>
+				Far far away, behind the word mountains, far from the <br>
+				countries Vokalia and Consonantia, there live the blind texts.
+			</p>
+			<a href="#">LEARN MORE</a>
+		</div>
+	</div>
+</div>
+<div class="about">
+	<div class="abt">
+		<div class="design wow animate__animated animate__bounceInLeft">
+			<div class="photo wow animate__animated animate__bounceInDown">
+				<img src="img/about_1.jpg">
+			</div>
+		</div>
+		
+	</div>
+	<div class="abt wow animate__animated animate__bounceInRight">
+		<h3 id="habt">ABOUT HOTELL</h3>
+		<p id="hpara">
+			Far far away, behind the word mountains, far from the countries<br>
+			Vokalia and Consonantia, there live the blind texts. Separated <br>
+			they live in Bookmarksgrove right at the coast of the Semantics,<br>
+			a large language ocean.
+			<Br>
+			<Br>
+			A small river named Duden flows by their place and supplies it <br>
+			with the necessary regelialia. It is a paradisematic country, in<br>
+			which roasted parts of sentences fly into your mouth.
+		</p>
+	</div>
+</div>
+<div class="blog">
+	<div class="blog1">
+		<p id="blog" class="display-5 wow animate__animated animate__zoomIn">
+			OUR BLOGS
+		</p>
+	</div>
+	<div class="blog2">
+		<div class="b wow animate__animated animate__bounceInLeft">
+			<img src="img/img_2.jpg">
+			<p>
+				Far far away, behind the word <Br>
+				mountains, far from the countries
+			</p>
+			<a href="#">Read More</a>
+		</div>
+		<div class="b wow animate__animated animate__bounceInUp">
+			<img src="img/img_3.jpg">
+			<p>
+				Far far away, behind the word <Br>
+				mountains, far from the countries
+			</p>
+			<a href="#">Read More</a>
+		</div>
+		<div class="b wow animate__animated animate__bounceInRight">
+			<img src="img/img_4.jpg">
+			<p>
+				Far far away, behind the word <Br>
+				mountains, far from the countries
+			</p>
+			<a href="#">Read More</a>
+		</div>
+	</div>
+</div>
+<div class="qna">
+	<div class="qna2">
+		<p class="display-6 wow animate__animated animate__bounceInLeft" id="p">
+			FREQUENTLY ASKED <br>
+			QUESTIONS
+		</p>
+	</div>
+	<div class="qna2">
+		<div class="accordion mt-1 wow animate__animated animate__bounceInRight" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Is it free?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        <br>	<br>
+		A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        How to install this template?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        <br>	<br>
+		A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Where can i get help?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+         <strong>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        <br>	<br>
+		A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+      </div>
+    </div>
+  </div>
+</div>
+	</div>
+</div>
+<footer>
+	<div class="foot">
+		<a href="#" class="wow animate__animated animate__bounceInLeft">Home</a>
+		<a href="#" class="wow animate__animated animate__bounceInLeft">About</a>
+		<a href="#" class="wow animate__animated animate__bounceInLeft">Places</a>
+		<a href="#" class="wow animate__animated animate__bounceInLeft">Services</a>
+		<a href="#" class="wow animate__animated animate__bounceInLeft">Destination</a>
+		<a href="#" class="wow animate__animated animate__bounceInLeft">Terms</a>
+		<a href="#" class="wow animate__animated animate__bounceInLeft">Privacy</a>
+	</div>
+	<div class="foot">
+		<h6 class="wow animate__animated animate__bounceInUp">Practice Area</h6>
+		<a href="#" class="wow animate__animated animate__bounceInDown">Travel</a>
+		<a href="#" class="wow animate__animated animate__bounceInDown">Popular Places</a>
+		<a href="#" class="wow animate__animated animate__bounceInDown">Destination</a>
+		<a href="#" class="wow animate__animated animate__bounceInDown">Tour</a>
+		<a href="#" class="wow animate__animated animate__bounceInDown">Family Vacation</a>
+	</div>
+	<div class="foot">
+		<h6 class="wow animate__animated animate__bounceInUp">Services</h6>
+		<a href="#" class="wow animate__animated animate__bounceInDown">Tour</a>
+		<a href="#" class="wow animate__animated animate__bounceInDown">Swimming</a>
+		<a href="#" class="wow animate__animated animate__bounceInDown">Kayak</a>
+		<a href="#" class="wow animate__animated animate__bounceInDown">Surfing</a>
+	</div>
+	<div class="foot">
+		<h6 class="wow animate__animated animate__bounceInUp">Contact</h6>
+		<p class="wow animate__animated animate__bounceInRight">43 Raymouth Rd. Baltemoer, London 3910</p>
+		<a href="#" class="wow animate__animated animate__bounceInRight">123456789</a>
+		<a href="#" class="wow animate__animated animate__bounceInRight">123456789</a>
+		<a href="#" class="wow animate__animated animate__bounceInRight">mumelele.com</a>
+	</div>
+</footer>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#drop").mouseenter(function(){
+			$(".dropdown-menu").show(300);
+		});
+		$("#drop").mouseleave(function(){
+			$(".dropdown-menu").hide(300);
+		});
+	});
+	$(document).ready(function(){
+		$("#bars").click(function(){
+			$("nav a").toggle(999);
+		});
+	});
+	$(document).ready(function(){
+		new WOW().init();
+	});
+</script>
+</html>
